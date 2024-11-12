@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+/* styles.css */
+
+/* Estilo para centrar el título y darle fondo negro */
+.title {
+  background-color: #000; /* Fondo negro */
+  color: yellow; /* Texto blanco */
+  text-align: center; /* Centrar el texto */
+  padding: 20px; /* Espaciado interno */
+  margin-top: 0; /* Eliminar margen superior */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilo para el contenedor de las tarjetas de clientes */
+.clientes-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilo para cada tarjeta de cliente */
+.cliente-card {
+  background-color: pink;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cambio de tamaño cuando se pasa el ratón sobre la tarjeta */
+.cliente-card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo de los títulos dentro de cada tarjeta */
+.cliente-card h3 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos dentro de la tarjeta */
+.cliente-card p {
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+}
+
+.cliente-card strong {
+  color: blueviolet;
+}
+
+/* Estilo para el título de la gráfica */
+h2 {
+  text-align: center;  
+  margin-top: 40px;
+  color: red;
 }
